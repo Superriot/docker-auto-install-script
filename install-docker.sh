@@ -30,10 +30,7 @@ if command -v docker-compose &>/dev/null; then
 else
     # Install Docker Compose
     echo "Installing Docker Compose..."
-    sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o 
-/usr/local/bin/docker-compose
-    sudo chmod +x /usr/local/bin/docker-compose
-
+    apt install docker-compose -y
     echo "Docker Compose has been installed successfully."
 fi
 
